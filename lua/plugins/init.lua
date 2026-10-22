@@ -15,6 +15,9 @@ local gh = function(repo)
   return "https://github.com/" .. repo
 end
 
+-- Pre-configure plugins whose global variables must exist before sourcing (e.g. VimTeX)
+require("plugins.vimtex")
+
 -- Declare and bootstrap plugins using Neovim 0.12's built-in package manager
 vim.pack.add({
   -- Core libraries & dependencies
@@ -47,6 +50,7 @@ vim.pack.add({
   -- Treesitter & Utilities
   gh("nvim-treesitter/nvim-treesitter"),
   gh("ThePrimeagen/vim-be-good"),
+  gh("lervag/vimtex"),
 }, { confirm = false })
 
 -- ============================================================================

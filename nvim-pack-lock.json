@@ -70,6 +70,10 @@
     "vim-be-good": {
       "rev": "0ae3de14eb8efc6effe7704b5e46495e91931cc5",
       "src": "https://github.com/ThePrimeagen/vim-be-good"
+    },
+    "vimtex": {
+      "rev": "79a5fb444147f94a5284b6800030e17eecd18a06",
+      "src": "https://github.com/lervag/vimtex"
     }
   }
 }
