@@ -1,10 +1,13 @@
-return {
-  "nvim-lualine/lualine.nvim",
-  config = function()
-    require("lualine").setup({
-      options = {
-        theme = "dracula",
-      },
-    })
-  end,
-}
+-- ============================================================================
+-- Lualine Statusline Configuration
+-- ============================================================================
+local ok, lualine = pcall(require, "lualine")
+if not ok then
+  return
+end
+
+lualine.setup({
+  options = {
+    theme = "dracula",
+  },
+})

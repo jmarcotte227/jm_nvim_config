@@ -1,7 +1,9 @@
-return{
-    {
-        'saghen/blink.indent',
-        --- @module 'blink.indent'
-        --- @type blink.indent.Config
-    }
-}
+-- ============================================================================
+-- blink.indent Configuration
+-- ============================================================================
+local ok, blink_indent = pcall(require, "blink.indent")
+if not ok then
+  return
+end
+
+blink_indent.setup()
